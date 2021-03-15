@@ -1,0 +1,16 @@
+<section  fxLayout.xs="column" fxFlexAlign="stretch">
+<div fxFlexAlign="end"><a  (click)="back()">Back to posts</a></div>
+
+	<mat-card class="post-card" *ngIf="post" > 
+		<mat-card-title>[{{post.id}}] {{post.title  | slice:0:10}}</mat-card-title> 
+		<mat-card-subtitle> 
+		</mat-card-subtitle> 
+	<mat-card-content> 
+		<div class="card-subtitle">By {{post.userId==2?'Pradeep [userid:' + post.userId+']':post.userId}}</div>
+		<div> 
+            {{post.body | slice:0:100}}
+		</div> 
+	</mat-card-content> 
+
+</mat-card> 
+</section>

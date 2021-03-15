@@ -1,0 +1,21 @@
+
+	<mat-card class="post-card" *ngIf="post" > 
+
+		<mat-card-title>{{post.title | slice:0:100}}</mat-card-title> 
+		<mat-card-subtitle> 
+		</mat-card-subtitle> 
+	<mat-card-content> 
+		<div class="card-subtitle" *ngIf="post.userId!==2 else user">User id: {{post.userId}}</div>
+		<ng-template #user>By Pradeep</ng-template>
+		<div *ngIf="showBody"> 
+            {{post.body | slice:0:200}}
+		</div> 
+	</mat-card-content> 
+
+	<mat-card-actions *ngIf="showDetails"> 
+		<a  [routerLink]="['/post']" [state]="post"> 
+			Show post
+        </a> 
+	</mat-card-actions> 
+</mat-card> 
+

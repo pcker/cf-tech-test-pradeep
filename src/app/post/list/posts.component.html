@@ -1,0 +1,9 @@
+<section fxLayout="column" fxLayout.xs="column" fxFlexAlign="center">
+  <div fxFlexAlign="end"><a href="" [routerLink]="['/']">Back to Create Post</a></div>
+  <div class="heading"> Posts</div>
+  <div *ngFor="let post of posts$ | async"  >
+    <div >
+      <app-post-card [post]="post" [showBody]="0" [showDetails]="1"></app-post-card>
+    </div>
+  </div>
+</section>

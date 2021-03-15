@@ -1,0 +1,24 @@
+$card-bg-color1:#f5f5f5;
+$card-bg-color2:#ffffff;
+$msg-success:seagreen;
+mat-form-field{
+    width: 100%;
+}
+mat-card{
+    background-color: $card-bg-color2;
+
+}
+mat-card-title{
+    font-size: 1.1rem;
+     background-color: $card-bg-color1;
+}
+mat-card-content{
+    background-color: $card-bg-color2;
+    width: 100%;
+}
+.success{
+    color:$msg-success;
+    font-weight: bold;
+}
+
+

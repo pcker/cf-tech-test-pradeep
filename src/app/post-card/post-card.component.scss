@@ -1,0 +1,29 @@
+
+    .post-card {
+        max-width: 300px;
+        margin: 0.4rem;
+       box-shadow: none;
+    }
+    
+    .card-subtitle{
+        font-size:0.9rem;
+        color:#cdcdcd;
+    }
+    @media only screen and (min-width: 768px) {
+        .post-card {
+            min-width: 500px;
+        }
+    }
+    mat-card-title{
+        margin-left: 0px;
+        font-weight: 700;
+        font-size:1.25rem;
+    }
+
+    a, a:active {
+        color:#4caf50
+    }
+    a:hover{
+        color:#cdcdcd;
+    }
+    
